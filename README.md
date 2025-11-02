@@ -7,7 +7,7 @@ Giving an svg file containing one stroke, this program will produce an animation
 1. **Extraction**: (In hindsight, I should have called it parsing) The svg string is parsed to determine the basic shapes that constitute it (straight lines, quadratic/cubic Bazier curves). Then it is converted to an object of type `SVGFunction` that represents a complex-valued function $f: [0,1] \rightarrow \mathbb C$ that "draws" the shape as the input varies between $0$ and $1$.
 2. **Calculation of the Fourier coefficient**: the Fourier coefficients are calculated, which determines the radii and the angular speed of all the arrows making the animation.
 
-You can use T and Z to zoom in and out.
+You can use Z and T to zoom in and out.
 
 ![image](./fourier_owl.png)
 
